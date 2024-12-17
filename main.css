@@ -17,6 +17,15 @@ header {
   padding: 10px 30px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.logo-imagen{
+  width: 10px;
+}
+
+.logito-tamano{
+  width: 50px;
+}
+
 header .logo {
   font-size: 24px;
   font-weight: 600;
