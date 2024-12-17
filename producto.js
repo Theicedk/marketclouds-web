@@ -7,17 +7,25 @@ document.addEventListener('DOMContentLoaded', function () {
       id: 1, // Añadimos el id explícito al objeto
       title: "Pink Floyd T-Shirt",
       brand: "Pull & Bear - S",
-      price: "€2.00",
-      img: "https://via.placeholder.com/500x600?text=Producto+1",
+      price: "$30.000 CLP",
+      img: "img/pinkfloyd-tshirt.jpg",
     },
     2: {
       id: 2,
       title: "Nike T-Shirt",
       brand: "Nike - M",
-      price: "€5.00",
-      img: "https://via.placeholder.com/500x600?text=Producto+2",
+      price: "$25.000 CLP",
+      img: "img/nike-tshirt.webp",
+    },
+    3: {
+      id: 3,
+      title: "Blue Sweater",
+      brand: "Pull and Bear - M",
+      price: "$40.000 CLP",
+      img: "img/blue-sweater.avif",
     },
   };
+  
 
   const product = productos[productId];
 

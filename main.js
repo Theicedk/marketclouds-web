@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
       brand: "Pull & Bear - S",
       user: "jackiebo04",
       description: "Camiseta vintage de Pink Floyd...",
-      price: "€2000",
+      price: "$30.000 CLP",
       taxInfo: "Incluye IVA (19%)",
-      img: "https://via.placeholder.com/300x400?text=Producto+1"
+      img: "img/pinkfloyd-tshirt.jpg"
     },
     {
       id: 2,
@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
       brand: "Nike - M",
       user: "conchigmzz",
       description: "Camiseta deportiva Nike...",
-      price: "€5000",
+      price: "$25.000 CLP",
       taxInfo: "Incluye IVA (19%)",
-      img: "https://via.placeholder.com/300x400?text=Producto+2"
+      img: "img/nike-tshirt.webp"
     },
     {
       id: 3,
@@ -30,9 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
       brand: "Pull & Bear - M",
       user: "paulafemenia58",
       description: "Suéter azul perfecto para el clima frío...",
-      price: "€4000",
+      price: "$40.000 CLP",
       taxInfo: "Incluye IVA (19%)",
-      img: "https://via.placeholder.com/300x400?text=Producto+3"
+      img: "img/blue-sweater.avif"
     }
   ];
 
