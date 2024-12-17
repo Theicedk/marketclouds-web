@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MarketClouds - Checkout</title>
-  <link rel="stylesheet" href="checkout.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarketClouds - Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
-  <header>
-    <div class="logo">MarketClouds</div>
-    <nav>
-      <ul>
-        <li><a href="main.html">Inicio</a></li>
-        <li><a href="cart.html">Carrito</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <div class="logo">MarketClouds</div>
+        <nav>
+            <ul>
+                <li><a href="main.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <div class="checkout-container">
-      <h1>Checkout</h1>
-      <form id="checkout-form">
-        <div>
-          <label for="email">Correo:</label>
-          <input type="email" id="email" required>
+    <main>
+        <!-- Contenedor del Checkout -->
+        <div class="checkout-container">
+            <h1>Checkout</h1>
+            <form id="checkout-form">
+                <!-- Correo -->
+                <div>
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" placeholder="Introduce tu correo" required>
+                </div>
+
+                <!-- Opciones de Entrega -->
+                <div>
+                    <label for="delivery-option">Opciones de entrega:</label>
+                    <select id="delivery-option" required>
+                        <option value="ship">Enviar a domicilio</option>
+                        <option value="pickup">Recoger en tienda</option>
+                    </select>
+                </div>
+
+                <!-- Dirección -->
+                <div id="address-container">
+                    <label for="address">Dirección:</label>
+                    <textarea id="address" placeholder="Introduce tu dirección" required></textarea>
+                </div>
+
+                <!-- Botón Finalizar -->
+                <div>
+                    <button type="submit">Finalizar Compra</button>
+                </div>
+            </form>
         </div>
 
-        <div>
-          <label for="delivery-option">Opciones de entrega:</label>
-          <select id="delivery-option" required>
-            <option value="ship">Enviar a domicilio</option>
-            <option value="pickup">Recoger en tienda</option>
-          </select>
-        </div>
-
-        <div>
-          <label for="address">Dirección:</label>
-          <textarea id="address" required></textarea>
-        </div>
-
+        <!-- Resumen del Pedido -->
         <div class="order-summary">
-          <h2>Resumen del Pedido</h2>
-          <div id="cart-items"></div>
-          <p><strong>Total: </strong><span id="total-price">€0.00</span></p>
+            <h2>Resumen del Pedido</h2>
+            <div id="cart-items">
+                <!-- Aquí se insertan dinámicamente los productos -->
+            </div>
+            <p class="total">
+                <strong>Total:</strong> <span id="total-price">€0.00</span>
+            </p>
         </div>
+    </main>
 
-        <div>
-          <button type="submit">Finalizar Compra</button>
-        </div>
-      </form>
-    </div>
-  </main>
+    <footer>
+        <p>© 2024 MarketClouds</p>
+    </footer>
 
-  <footer>
-    <p>© 2024 MarketClouds</p>
-  </footer>
-
-  <script src="checkout.js"></script>
+    <script src="checkout.js"></script>
 </body>
 </html>

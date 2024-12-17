@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const productos = {
     1: {
+      id: 1, // Añadimos el id explícito al objeto
       title: "Pink Floyd T-Shirt",
       brand: "Pull & Bear - S",
       price: "€2.00",
       img: "https://via.placeholder.com/500x600?text=Producto+1",
     },
     2: {
+      id: 2,
       title: "Nike T-Shirt",
       brand: "Nike - M",
       price: "€5.00",
@@ -27,13 +29,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.getElementById('add-to-cart').addEventListener('click', function () {
       const cart = JSON.parse(localStorage.getItem('cart')) || [];
-      cart.push({ ...product });
+      cart.push(product); // Agregamos el producto con el id
       localStorage.setItem('cart', JSON.stringify(cart));
       alert(`${product.title} añadido al carrito`);
     });
 
     document.getElementById('buy-now').addEventListener('click', function () {
-      const cart = [{ ...product }];
+      const cart = [product];
       localStorage.setItem('cart', JSON.stringify(cart));
       window.location.href = 'checkout.html';
     });
