@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vender Producto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="venta.css">
+  <script src="venta.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">MarketClouds</div>
+    <nav>
+      <ul>
+        <li><a href="main.html">Inicio</a></li>
+        <li><a href="venta.html">Vender</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h1>Vende tu producto</h1>
+      <form id="sell-form">
+        <div class="form-group">
+          <label for="product-name">Nombre del producto:</label>
+          <input type="text" id="product-name" name="product-name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="product-price">Precio:</label>
+          <input type="number" id="product-price" name="product-price" required>
+        </div>
+
+        <div class="form-group">
+          <label for="product-description">Descripción:</label>
+          <textarea id="product-description" name="product-description" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="product-condition">Estado del producto:</label>
+          <select id="product-condition" name="product-condition" required>
+            <option value="Nuevo">Nuevo</option>
+            <option value="Usado">Usado</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="product-image">Imagen del producto:</label>
+          <input type="file" id="product-image" name="product-image" accept="image/*" required>
+        </div>
+
+        <button type="submit" class="submit-btn">Publicar producto</button>
+      </form>
+      <!-- Mensaje de éxito -->
+      <div id="success-message" class="alert success" style="display: none;">
+        ¡Producto publicado con éxito!
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Marketplace de Ropa</p>
+  </footer>
+</body>
+</html>
